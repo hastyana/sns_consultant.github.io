@@ -1,0 +1,22 @@
+{
+  "name": "snsconsultant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss-cli@latest build ./src/input.css -o ./dist/style.css",
+    "prod": "NODE_ENV=production npx tailwindcss-cli@latest build ./src/input.css -o ./dist/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.1"
+  },
+  "dependencies": {
+    "@flaticon/flaticon-uicons": "^1.7.0",
+    "autoprefixer": "^10.4.12",
+    "postcss": "^8.4.18"
+  }
+}
