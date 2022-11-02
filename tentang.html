@@ -1,0 +1,304 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="dist/style.css" rel="stylesheet">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <title>S&amp;S Consultant &#8211; Tourism &amp; Architect Master Plan</title>
+  <link rel="icon" href="https://sns-consultant-id.com/wp-content/uploads/2022/09/cropped-favicon-32x32.png" sizes="32x32" type="image/x-icon"/>
+  <link rel="icon" href="https://sns-consultant-id.com/wp-content/uploads/2022/09/cropped-favicon-192x192.png" sizes="192x192" type="image/x-icon"/>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+
+</head>
+
+<body>
+  
+  <!-- Header Section -->
+  <header class="relative overflow-hidden bg-no-repeat bg-cover">
+
+    <!-- Navbar -->
+    <div class="container px-6 mx-auto">
+      <nav x-data="{ isOpen: false }" class="relative bg-transparent">
+        <div class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
+            <div class="flex items-center justify-between">
+                <div>
+                    <a class="" href="#">
+                      <img width="150" src="https://sns-consultant-id.com/wp-content/uploads/2022/09/logo.png" alt="Logo" />
+                    </a>
+                </div>
+    
+                <!-- Mobile menu button -->
+                <div class="flex lg:hidden">
+                    <button x-cloak @click="isOpen = !isOpen" type="button" class="text-black hover:text-gray-200 focus:outline-none focus:text-white dark:focus:text-gray-200" aria-label="toggle menu">
+                        <svg x-show="!isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
+                        </svg>
+                
+                        <svg x-show="isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+    
+            <!-- Mobile Menu Mode -->
+            <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']" class="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center">
+                <div class="flex flex-col md:flex-row md:mx-6">
+                    <a class="my-2 font-bold text-black transition-colors duration-300 transform hover:text-gray-300 md:mx-4 md:my-0" href="index.html">Home</a>
+                    <a class="my-2 font-bold text-black transition-colors duration-300 transform hover:text-gray-300 md:mx-4 md:my-0" href="portofolio.html">Portofolio</a>
+                    <a class="my-2 font-bold text-black transition-colors duration-300 transform hover:text-gray-300 md:mx-4 md:my-0" href="blog.html">Blog</a>
+                    <a class="my-2 font-bold text-black transition-colors duration-300 transform hover:text-gray-300 md:mx-4 md:my-0" href="tentang.html">About</a>
+                </div>
+    
+                <div class="flex justify-center md:block">
+                  <a href="kontak.html">
+                    <button class="px-6 py-2 font-bold tracking-wide text-white transition-colors duration-300 transform hover:text-black bg-black rounded-md hover:bg-transparent focus:outline-none focus:ring focus:ring-black focus:ring-opacity-80">
+                    Contact Us
+                    </button>  
+                  </a>                  
+                </div>
+            </div>
+        </div>
+      </nav>
+    </div>
+
+  </header>
+
+  <section class="mb-20">
+
+    <div class="text-center bg-gray-100 px-7 py-7 h-28 lg:h-24">
+      <h2 class="text-4xl font-bold">Siapa Kami ?</h2>
+    </div>
+
+    <!-- Identitas S&S Consultant -->
+    <div class="max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16" >
+        <div class="mx-auto max-w-lg text-center lg:mx-0 lg:text-left">
+            <div class="max-w justify-center items-center mb-5">
+              <img alt="gallery" class="block object-cover object-center w-full h-full"
+              src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp">  
+            </div>
+        </div>
+  
+        <div class="grid">
+          <div class="max-w justify-center items-center mb-5">
+            <h2 class="text-2xl font-bold sm:text-6xl text-center">Tentang Kami</h2>
+            <p class="mt-4 text-black text-center">
+              Identitas
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+      <div class="w-full px-4">
+        <h2 class="text-2xl font-bold text-center mb-5">Skills</h2>
+        <div class="flex flex-wrap items-center justify-center">
+          <a
+            href="javascript:void(0)"
+            class="mx-4 flex w-[150px] items-center justify-center py-5 2xl:w-[180px] shadow-lg px-2"
+          >
+            <img
+              src="https://cdn.tailgrids.com/1.0/assets/images/brands/graygrids.svg"
+              alt="image"
+              class="h-10 w-full"
+            />
+          </a>
+          <a
+            href="javascript:void(0)"
+            class="mx-4 flex w-[150px] items-center justify-center py-5 2xl:w-[180px] shadow-lg px-2"
+          >
+            <img
+              src="https://cdn.tailgrids.com/1.0/assets/images/brands/lineicons.svg"
+              alt="image"
+              class="h-10 w-full"
+            />
+          </a>
+          <a
+            href="javascript:void(0)"
+            class="mx-4 flex w-[150px] items-center justify-center py-5 2xl:w-[180px] shadow-lg px-2"
+          >
+            <img
+              src="https://cdn.tailgrids.com/1.0/assets/images/brands/uideck.svg"
+              alt="image"
+              class="h-10 w-full"
+            />
+          </a>
+          <a
+            href="javascript:void(0)"
+            class="mx-4 flex w-[150px] items-center justify-center py-5 2xl:w-[180px] shadow-lg px-2"
+          >
+            <img
+              src="https://cdn.tailgrids.com/1.0/assets/images/brands/ayroui.svg"
+              alt="image"
+              class="h-10 w-full"
+            />
+          </a>
+        </div>
+      </div>
+
+    <!-- Visi Misi dan Nilai -->
+    <div class="max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16" >
+        <div class="mx-auto max-w-lg text-center lg:mx-0 lg:text-left">
+            <div class="max-w justify-center items-center mb-5">
+              <h2 class="text-xl font-bold sm:text-4xl text-center">Nilai Nilai Perusahaan</h2>
+              <p class="mt-4 text-black">
+                1.  <br>
+                2.  <br>
+                3.  <br>
+                4.  <br>
+                5. 
+              </p>
+            </div>
+        </div>
+  
+        <div class="grid">
+          <div class="max-w justify-center items-center mb-5">
+            <h2 class="text-2xl font-bold sm:text-6xl text-center">VISI</h2>
+            <p class="mt-4 text-black text-center">
+              Menjadi mitra konsultant terbaik, memberikan solusi lebih dari yang diharapkan serta mengedepankan pelayanan prima dan inovasi berkelanjutan.
+            </p>
+          </div>
+          <div class="max-w flex flex-col justify-center items-center">
+            <h2 class="text-2xl font-bold sm:text-6xl text-center">MISI</h2>
+            <p class="mt-4 text-black">
+              1. Memastikan kepuasan pelanggan dan kerjasama. <br>
+              2. Beradaptasi dengan perkembangan global. <br>
+              3. Menjunjung Kreativitas & Inovasi berkelanjutan. <br>
+              4. Bermanfaat pada semua pemangku kepentingan. <br>
+              5. Adab selalu menjadi yang Utama.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Member -->
+    <div class="w-full px-4">
+      <h2 class="text-2xl font-bold text-center mb-5">Tim Kami</h2>
+      <div class="flex flex-wrap items-center justify-center">
+          <img
+            src="../assets/img/user.svg"
+            alt="image"
+            style="width:250px; height:250px;"
+            class="w-full h-full lg:h-1/5 lg:w-1/5 rounded-lg shadow-lg m-2 "
+          />
+          <img
+            src="../assets/img/user.svg"
+            alt="image"
+            style="width:250px; height:250px;"
+            class="w-full h-full lg:h-1/5 lg:w-1/5 rounded-lg shadow-lg m-2"
+          />
+          <img
+            src="../assets/img/user.svg"
+            alt="image"
+            style="width:250px; height:250px;"
+            class="w-full h-full lg:h-1/5 lg:w-1/5 rounded-lg shadow-lg m-2"
+          />
+          <img
+          src="../assets/img/user.svg"
+          alt="image"
+          style="width:250px; height:250px;"
+          class="w-full h-full lg:h-1/5 lg:w-1/5 rounded-lg shadow-lg m-2"
+          />
+      </div>
+    </div>
+
+  </section>  
+  
+  <!-- Footer Section -->
+  <footer class="bg-black">
+
+    <div class="container px-6 py-8 mx-auto">
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+
+        <img width="2226" height="520" src="https://sns-consultant-id.com/wp-content/uploads/2022/09/logo.png" alt="Logo" />
+
+        <div>
+          <div class="text-xs font-medium text-white uppercase">
+              Perusahaan
+          </div>
+          <a target="_blank" href="tentang.html" class="block mt-5 text-sm font-medium text-gray-100 duration-700 hover:text-gray-400 hover:underline">
+              Tentang Kami
+          </a>
+          <a target="_blank" href="blog.html" class="block mt-5 text-sm font-medium text-gray-100 duration-700 hover:text-gray-400 hover:underline">
+            Blog
+        </a>
+        </div>
+
+        <div>
+          <div class="text-xs font-medium text-white uppercase">
+              Bisnis
+          </div>
+          <a target="_blank" href="layanan.html" class="block mt-5 text-sm font-medium text-gray-100 duration-700 hover:text-gray-400 hover:underline">
+              Layanan
+          </a>
+          <a target="_blank" href="portofolio.html" class="block mt-5 text-sm font-medium text-gray-100 duration-700 hover:text-gray-400 hover:underline">
+            Portofolio
+          </a>
+          <a target="_blank" href="404.html" class="block mt-5 text-sm font-medium text-gray-100 duration-700 hover:text-gray-400 hover:underline">
+            Kemitraan
+          </a>
+        </div>
+
+        <div>
+          <div class="text-xs font-medium text-white uppercase">
+              Kontak
+          </div>
+          <a target="_blank" href="https://api.whatsapp.com/send?phone=62000000000" class="block mt-5 text-sm font-medium text-gray-100 duration-700 hover:text-gray-400 hover:underline">
+            0000-0000-0000
+          </a>
+          <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=contact@email.com" class="block mt-5 text-sm font-medium text-gray-100 duration-700 hover:text-gray-400 hover:underline">
+            Contact@email.com
+          </a>
+        </div>
+
+      </div>
+
+      <hr class="my-10 border-gray-600 dark:border-gray-300">
+
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <p class="text-sm text-white">Copyright 2021 © S&S Consultant - Tourism & Architect Master Plan. All Rights Reserved.</p>
+          <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=contact@email.com" class="text-sm mx-2 text-gray-100 hover:text-gray-400" aria-label="Mail">
+            <i class="fi fi-sr-envelope"></i>&nbsp;Contact@email.com
+          </a>
+
+          <a target="_blank" href="https://api.whatsapp.com/send?phone=62000000000" class="text-sm mx-2 text-gray-100 hover:text-gray-400" aria-label="Phone">
+            <i class="fi fi-sr-phone-call"></i>&nbsp;0000-0000-0000
+          </a>
+          <div class="flex mt-3 -mx-2 sm:mt-0">
+              <a target="_blank" href="https://instagram.com//" class="mx-2 text-gray-100 hover:text-gray-400" aria-label="Instagram">
+                <i class="fi fi-brands-instagram"></i>
+              </a>
+
+              <a target="_blank" href="https://www.facebook.com/" class="mx-2 text-gray-100 hover:text-gray-400" aria-label="Facebook">
+                <i class="fi fi-brands-facebook"></i>
+              </a>
+
+              <a target="_blank" href="https://github.com/" class="mx-2 text-gray-100 hover:text-gray-400" aria-label="Github">
+                  <i class="fi fi-brands-github"></i>
+              </a>
+
+              <a target="_blank" href="https://twitter.com/" class="mx-2 text-gray-100 hover:text-gray-400" aria-label="Twitter">
+                <i class="fi fi-brands-twitter"></i>
+              </a>
+
+            <a target="_blank" href="https://www.linkedin.com/in/hastyana/" class="mx-2 text-gray-100 hover:text-gray-400" aria-label="Linkedin">
+              <i class="fi fi-brands-linkedin"></i>
+            </a>
+          </div>
+      </div>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>

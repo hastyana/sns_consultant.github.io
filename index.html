@@ -1,0 +1,682 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="dist/style.css" rel="stylesheet">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <title>S&amp;S Consultant &#8211; Tourism &amp; Architect Master Plan</title>
+  <link rel="icon" href="https://sns-consultant-id.com/wp-content/uploads/2022/09/cropped-favicon-32x32.png" sizes="32x32" type="image/x-icon"/>
+  <link rel="icon" href="https://sns-consultant-id.com/wp-content/uploads/2022/09/cropped-favicon-192x192.png" sizes="192x192" type="image/x-icon"/>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+
+</head>
+
+<body>
+  
+  <!-- Header Section -->
+  <header class="relative overflow-hidden bg-no-repeat bg-cover" style="
+  background-position: 50%;
+  background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/146.webp');
+  height: 100vh;">
+
+    <!-- Navbar -->
+    <div class="container px-6 mx-auto">
+      <nav x-data="{ isOpen: false }" class="relative bg-transparent">
+        <div class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
+            <div class="flex items-center justify-between">
+                <div>
+                    <a class="" href="#">
+                      <img width="150" src="https://sns-consultant-id.com/wp-content/uploads/2022/09/logo.png" alt="Logo" />
+                    </a>
+                </div>
+    
+                <!-- Mobile menu button -->
+                <div class="flex lg:hidden">
+                    <button x-cloak @click="isOpen = !isOpen" type="button" class="text-black hover:text-gray-200 focus:outline-none focus:text-white dark:focus:text-gray-200" aria-label="toggle menu">
+                        <svg x-show="!isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
+                        </svg>
+                
+                        <svg x-show="isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+    
+            <!-- Mobile Menu Mode -->
+            <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']" class="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center">
+                <div class="flex flex-col md:flex-row md:mx-6">
+                    <a class="my-2 font-bold text-black transition-colors duration-300 transform hover:text-gray-300 md:mx-4 md:my-0" href="index.html">Home</a>
+                    <a class="my-2 font-bold text-black transition-colors duration-300 transform hover:text-gray-300 md:mx-4 md:my-0" href="portofolio.html">Portofolio</a>
+                    <a class="my-2 font-bold text-black transition-colors duration-300 transform hover:text-gray-300 md:mx-4 md:my-0" href="blog.html">Blog</a>
+                    <a class="my-2 font-bold text-black transition-colors duration-300 transform hover:text-gray-300 md:mx-4 md:my-0" href="tentang.html">About</a>
+                </div>
+    
+                <div class="flex justify-center md:block">
+                  <a href="kontak.html">
+                    <button class="px-6 py-2 font-bold tracking-wide text-white transition-colors duration-300 transform hover:text-black bg-black rounded-md hover:bg-transparent focus:outline-none focus:ring focus:ring-black focus:ring-opacity-80">
+                    Contact Us
+                    </button>  
+                  </a>                  
+                </div>
+            </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Call To Action (CTA) -->
+    <div class="container flex flex-col items-center h-screen px-6 py-12 mx-auto text-center justify-center">
+      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-6xl md:text-8xl dark:text-white mx-auto">
+        Mengembangkan Potensi Pariwisata
+      </h2>
+      <br>
+      <p class="text-sm font-normal tracking-tight text-white sm:text-xl dark:text-white">
+        "DESA adalah masa depan INDONESIA" <br> (Stevie Husein, S.E., M.M.)
+      </p>
+      <div class="mt-6 sm:-mx-2">
+        <div class="inline-flex w-full sm:w-auto sm:mx-2">
+          <a href="kontak.html" class="inline-flex items-center justify-center w-full px-8 py-2 font-bold text-xl tracking-wide text-white transition-colors duration-300 transform hover:text-black bg-transparent hover:bg-white rounded-full border border-white hover:border-none focus:outline-none focus:ring focus:ring-black focus:ring-opacity-80">
+            Kontak Kami
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- About Section -->
+  <section>
+
+    <div class="max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16" >
+        <div class="mx-auto max-w-lg text-center lg:mx-0 lg:text-left">
+            <div class="max-w justify-center items-center mb-5">
+              <h2 class="text-3xl font-bold sm:text-6xl text-center">TENTANG KAMI</h2>
+              <p class="mt-4 text-black text-center">
+                Berisi identitas instansi
+              </p>
+            </div>
+        </div>
+  
+        <div class="grid">
+          <div class="max-w justify-center items-center mb-5">
+            <h2 class="text-3xl font-bold sm:text-6xl text-center">VISI</h2>
+            <p class="mt-4 text-black text-center">
+              Menjadi mitra konsultant terbaik, memberikan solusi lebih dari yang diharapkan serta mengedepankan pelayanan prima dan inovasi berkelanjutan.
+            </p>
+          </div>
+          <div class="max-w flex flex-col justify-center items-center">
+            <h2 class="text-3xl font-bold sm:text-6xl text-center">MISI</h2>
+            <p class="mt-4 text-black">
+              1. Memastikan kepuasan pelanggan dan kerjasama. <br>
+              2. Beradaptasi dengan perkembangan global. <br>
+              3. Menjunjung Kreativitas & Inovasi berkelanjutan. <br>
+              4. Bermanfaat pada semua pemangku kepentingan. <br>
+              5. Adab selalu menjadi yang Utama.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Services Section -->
+  <section>
+    <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h2 class="text-2xl font-bold">Layanan</h2>
+      </div>
+
+      <div class="swiper mt-8">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide rounded-lg shadow-lg">
+              <div>
+                <h3 class="font-bold">Layanan 1</h3>
+              </div>
+              <img
+                alt="Layanan 1"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" 
+                class="aspect-square w-full object-cover"
+              />
+          </div>
+
+          <div class="swiper-slide rounded-lg shadow-lg">
+              <div>
+                <h3 class="font-bold">Layanan 2</h3>
+              </div>
+              <img
+                alt="Layanan 2"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" 
+                class="aspect-square w-full object-cover"
+              />
+          </div>
+
+          <div class="swiper-slide rounded-lg shadow-lg">
+              <div>
+                <h3 class="font-bold">Layanan 3</h3>
+              </div>
+              <img
+                alt="Layanan 3"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" 
+                class="aspect-square w-full object-cover"
+              />
+          </div>
+
+          <div class="swiper-slide rounded-lg shadow-lg">
+              <div>
+                <h3 class="font-bold">Layanan 4</h3>
+              </div>
+              <img
+                alt="Layanan 4"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" 
+                class="aspect-square w-full object-cover"
+              />
+          </div>
+        </div>
+        <div class="swiper-pagination !relative !bottom-0 mt-12"></div>
+      </div>
+      <div class="flex justify-end">
+        <a
+            href="layanan.html"
+            class="mt-8 inline-flex items-center justify-center object-center rounded-full border border-white hover:border-black bg-black px-8 py-3 text-white hover:bg-transparent hover:text-black focus:outline-none focus:ring"
+          > 
+            <span class="text-sm font-medium"> More... </span>
+  
+            <svg
+              class="ml-3 h-5 w-5"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section>
+    <div class="max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16">
+        <div class="mx-auto max-w-lg text-center lg:mx-0 lg:text-left">
+          <h2 class="text-3xl font-bold sm:text-4xl">Mengapa Kami ?</h2>
+  
+          <p class="mt-4 text-gray-600">
+            Alasan memilih layanan kami
+          </p>
+        </div>
+  
+        <div class="grid grid-cols-2 gap-4 sm:grid-cols-3">
+          <div class="block rounded-xl border border-gray-100 p-4 shadow-md hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring">
+            <span class="inline-block rounded-lg bg-gray-50 p-3">
+              
+            </span>
+            <h2 class="mt-2 font-bold">Perencenaan sesuai dengan permintaan</h2>
+            <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
+              maksud dari poin tsb.
+            </p>
+          </div>
+
+          <div class="block rounded-xl border border-gray-100 p-4 shadow-md hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring">
+            <span class="inline-block rounded-lg bg-gray-50 p-3">
+              
+            </span>
+            <h2 class="mt-2 font-bold">Memberikan masukan untuk perencanaan</h2>
+            <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
+              maksud dari poin tsb.
+            </p>
+          </div>
+
+          <div class="block rounded-xl border border-gray-100 p-4 shadow-md hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring">
+            <span class="inline-block rounded-lg bg-gray-50 p-3">
+              
+            </span>
+            <h2 class="mt-2 font-bold">lorem ipsum</h2>
+            <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
+              maksud dari poin tsb.
+            </p>
+          </div>
+
+          <div class="block rounded-xl border border-gray-100 p-4 shadow-md hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring">
+            <span class="inline-block rounded-lg bg-gray-50 p-3">
+              
+            </span>
+            <h2 class="mt-2 font-bold">lorem ipsum</h2>
+            <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
+              maksud dari poin tsb.
+            </p>
+          </div>
+
+          <div class="block rounded-xl border border-gray-100 p-4 shadow-md hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring">
+            <span class="inline-block rounded-lg bg-gray-50 p-3">
+              
+            </span>
+            <h2 class="mt-2 font-bold">lorem ipsum</h2>
+            <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
+              maksud dari poin tsb.
+            </p>
+          </div>
+
+          <div class="block rounded-xl border border-gray-100 p-4 shadow-md hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring">
+            <span class="inline-block rounded-lg bg-gray-50 p-3">
+              
+            </span>
+            <h2 class="mt-2 font-bold">lorem ipsum</h2>
+            <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
+              maksud dari poin tsb.
+            </p>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portofolio Section -->
+  <section>
+    <div  class="overflow-hidden text-black">
+    <div class="container px-5 py-2 mx-auto lg:pt-12 lg:px-32">
+      <div class="text-center px-4 py-4">
+        <h2 class="text-2xl font-bold">Portofolio</h2>
+        <p>Project yang pernah kami kerjakan dengan beberapa klien</p>
+      </div>
+      <div class="flex flex-wrap -m-1 md:-m-2">
+        <div class="flex flex-wrap w-auto lg:w-1/3 transform transition duration-300 hover:scale-110">
+          <a class="w-full p-1 md:p-2" href="isi_portofolio.html">
+            <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+              src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp">
+          </a>
+        </div>
+        <div class="flex flex-wrap w-auto lg:w-1/3 transform transition duration-300 hover:scale-110">
+          <a class="w-full p-1 md:p-2" href="isi_portofolio.html">
+            <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+              src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp">
+          </a>
+        </div>
+        <div class="flex flex-wrap w-auto lg:w-1/3 transform transition duration-300 hover:scale-110">
+          <a class="w-full p-1 md:p-2" href="isi_portofolio.html">
+            <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+              src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp">
+          </a>
+        </div>
+      </div>
+      <div class="flex justify-center">
+      <a
+          href="portofolio.html"
+          class="mt-8 inline-flex items-center justify-center object-center rounded-full border border-white hover:border-black bg-black px-8 py-3 text-white hover:bg-transparent hover:text-black focus:outline-none focus:ring"
+        > 
+          <span class="text-sm font-medium"> More... </span>
+
+          <svg
+            class="ml-3 h-5 w-5"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"
+            />
+          </svg>
+        </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section>
+    <div id="blog" class="bg-white px-4 xl:px-4 py-14">
+      <div class="mx-auto container">
+          <span role="contentinfo">
+            <h2 class="text-2xl font-bold text-center">Latest From Our Blog</h2>
+          </span>
+          <div tabindex="0"  aria-label="Group of cards" class="focus:outline-none mt-12 lg:mt-24">
+            <div>
+              <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8">
+                <a target="_blank" href="isi_blog.html">
+                <div tabindex="0" class="focus:outline-none shadow-md rounded-md" aria-label="card 1" >
+                  <img tabindex="0" role="img" aria-label="gaming" class="focus:outline-none w-full" src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" alt="" />
+                  <div class="py-2 px-4 w-full flex justify-between bg-black">
+                    <p tabindex="0" class="focus:outline-none text-sm text-white font-semibold tracking-wide">Penulis</p>
+                    <p tabindex="0" class="focus:outline-none text-sm text-white font-semibold tracking-wide">Tanggal</p>
+                  </div>
+                  <div class="bg-white px-3 lg:px-6 py-4 rounded-bl-3xl rounded-br-3xl">
+                    <h1 tabindex="0" class="focus:outline-none text-lg text-gray-900 font-semibold tracking-wider">Judul</h1>
+                    <p tabindex="0" class="focus:outline-none text-gray-700 text-sm lg:text-base lg:leading-8 pr-4 tracking-wide mt-2">isi singkat ...</p>
+                  </div>
+                </div>
+                </a>
+                <a target="_blank" href="isi_blog.html">
+                <div tabindex="0" class="focus:outline-none shadow-md rounded-md" aria-label="card 2" >
+                  <img tabindex="0" role="img" aria-label="gaming" class="focus:outline-none w-full" src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" alt="" />
+                  <div class="py-2 px-4 w-full flex justify-between bg-black">
+                    <p tabindex="0" class="focus:outline-none  text-sm text-white font-semibold tracking-wide">Penulis</p>
+                    <p tabindex="0" class="focus:outline-none text-sm text-white font-semibold tracking-wide">Tanggal</p>
+                  </div>
+                  <div class="bg-white px-3 lg:px-6 py-4 rounded-bl-3xl rounded-br-3xl">
+                    <h1 tabindex="0" class="focus:outline-none text-lg text-gray-900 font-semibold tracking-wider">Judul</h1>
+                    <p tabindex="0" class="focus:outline-none text-gray-700 text-sm lg:text-base lg:leading-8 pr-4 tracking-wide mt-2">isi singkat ...</p>
+                  </div>
+                </div>
+                </a>
+                <a target="_blank" href="isi_blog.html">
+                <div tabindex="0" class="focus:outline-none shadow-md rounded-md" aria-label="card 3" >
+                  <img tabindex="0" role="img" aria-label="gaming" class="focus:outline-none w-full" src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" alt="" />
+                  <div class="py-2 px-4 w-full flex justify-between bg-black">
+                    <p tabindex="0" class="focus:outline-none  text-sm text-white font-semibold tracking-wide">Penulis</p>
+                    <p tabindex="0" class="focus:outline-none text-sm text-white font-semibold tracking-wide">Tanggal</p>
+                  </div>
+                  <div class="bg-white px-3 lg:px-6 py-4 rounded-bl-3xl rounded-br-3xl">
+                    <h1 tabindex="0" class="focus:outline-none text-lg text-gray-900 font-semibold tracking-wider">Judul</h1>
+                    <p tabindex="0" class="focus:outline-none text-gray-700 text-sm lg:text-base lg:leading-8 pr-4 tracking-wide mt-2">isi singkat ...</p>
+                  </div>
+                </div>
+                </a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="px-4">
+        <a
+          href="blog.html"
+          class="mt-8 inline-flex items-center justify-center object-center rounded-full border border-white hover:border-black bg-black px-8 py-3 text-white hover:bg-transparent hover:text-black focus:outline-none focus:ring"
+        > 
+          <span class="text-sm font-medium"> More... </span>
+
+          <svg
+            class="ml-3 h-5 w-5"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"
+            />
+          </svg>
+        </a>
+      </div>      
+    </div>  
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-[1340px] px-4 py-16 sm:px-6 sm:py-24 lg:mr-0 lg:pl-8 lg:pr-0 overflow-y-hidden">
+      <div class="max-w-7xl items-end justify-between sm:flex sm:pr-6 lg:pr-8">
+        <h2 class="max-w-xl text-4xl font-bold tracking-tight sm:text-5xl">
+          Apa Kata Mereka
+        </h2>
+  
+        <div class="mt-8 flex lg:mt-0">
+          <button
+            class="prev-button rounded-full border border-current p-3 text-black transition-colors focus:bg-black focus:text-white focus:outline-none"
+          >
+            <span class="sr-only">Previous Slide</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 -rotate-180 transform"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+  
+          <button
+            class="next-button ml-3 rounded-full border border-current p-3 text-black focus:bg-black focus:text-white focus:outline-none"
+          >
+            <span class="sr-only">Next Slide</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+  
+      <div class="-mx-6 mt-8 lg:col-span-2 lg:mx-0">
+        <div class="swiper-container !overflow-hidden">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <blockquote class="flex h-full flex-col justify-between bg-gray-100 p-12 shadow-md">
+                <div>  
+                  <div class="mt-4">  
+                    <p class="mt-4 text-lg text-gray-600">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsam cumque recusandae dolorum porro, quasi sunt
+                      necessitatibus dolorem ab laudantium vel.
+                    </p>
+                  </div>
+                </div>
+  
+                <footer class="mt-8 text-gray-500">- Nama</footer>
+              </blockquote>
+            </div>
+  
+            <div class="swiper-slide">
+              <blockquote class="flex h-full flex-col justify-between bg-gray-100 p-12 shadow-md">
+                <div>  
+                  <div class="mt-4">  
+                    <p class="mt-4 text-lg text-gray-600">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsam cumque recusandae dolorum porro, quasi sunt
+                      necessitatibus dolorem ab laudantium vel.
+                    </p>
+                  </div>
+                </div>
+  
+                <footer class="mt-8 text-gray-500">- Nama</footer>
+              </blockquote>
+            </div>
+  
+            <div class="swiper-slide">
+              <blockquote class="flex h-full flex-col justify-between bg-gray-100 p-12 shadow-md">
+                <div>  
+                  <div class="mt-4">  
+                    <p class="mt-4 text-lg text-gray-600">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsam cumque recusandae dolorum porro, quasi sunt
+                      necessitatibus dolorem ab laudantium vel.
+                    </p>
+                  </div>
+                </div>
+  
+                <footer class="mt-8 text-gray-500">- Nama</footer>
+              </blockquote>
+            </div>
+  
+            <div class="swiper-slide">
+              <blockquote class="flex h-full flex-col justify-between bg-gray-100 p-12 shadow-md">
+                <div>  
+                  <div class="mt-4">  
+                    <p class="mt-4 text-lg text-gray-600">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsam cumque recusandae dolorum porro, quasi sunt
+                      necessitatibus dolorem ab laudantium vel.
+                    </p>
+                  </div>
+                </div>
+  
+                <footer class="mt-8 text-gray-500">- Nama</footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Java Script Swiper -->
+<script>
+  new Swiper('.swiper', {
+    loop: true,
+    spaceBetween: 32,
+    slidesPerView: 1,
+    pagination: {
+      clickable: true,
+      el: '.swiper-pagination',
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 4,
+      },
+    },
+  })
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('.swiper-container', {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 32,
+      autoplay: {
+        delay: 8000,
+      },
+      navigation: {
+        nextEl: '.next-button',
+        prevEl: '.prev-button',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1.5,
+          centeredSlides: true,
+        },
+        1024: {
+          centeredSlides: false,
+          slidesPerView: 2.25,
+        },
+      },
+    })
+  })
+</script>
+  
+  <!-- Footer Section -->
+  <footer class="bg-black">
+
+    <div class="container px-6 py-8 mx-auto">
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+
+        <img width="2226" height="520" src="https://sns-consultant-id.com/wp-content/uploads/2022/09/logo.png" alt="Logo" />
+
+        <div>
+          <div class="text-xs font-medium text-white uppercase">
+              Perusahaan
+          </div>
+          <a target="_blank" href="tentang.html" class="block mt-5 text-sm font-medium text-gray-100 duration-700 hover:text-gray-400 hover:underline">
+              Tentang Kami
+          </a>
+          <a target="_blank" href="blog.html" class="block mt-5 text-sm font-medium text-gray-100 duration-700 hover:text-gray-400 hover:underline">
+            Blog
+        </a>
+        </div>
+
+        <div>
+          <div class="text-xs font-medium text-white uppercase">
+              Bisnis
+          </div>
+          <a target="_blank" href="layanan.html" class="block mt-5 text-sm font-medium text-gray-100 duration-700 hover:text-gray-400 hover:underline">
+              Layanan
+          </a>
+          <a target="_blank" href="portofolio.html" class="block mt-5 text-sm font-medium text-gray-100 duration-700 hover:text-gray-400 hover:underline">
+            Portofolio
+          </a>
+          <a target="_blank" href="404.html" class="block mt-5 text-sm font-medium text-gray-100 duration-700 hover:text-gray-400 hover:underline">
+            Kemitraan
+          </a>
+        </div>
+
+        <div>
+          <div class="text-xs font-medium text-white uppercase">
+              Kontak
+          </div>
+          <a target="_blank" href="https://api.whatsapp.com/send?phone=62000000000" class="block mt-5 text-sm font-medium text-gray-100 duration-700 hover:text-gray-400 hover:underline">
+            0000-0000-0000
+          </a>
+          <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=contact@email.com" class="block mt-5 text-sm font-medium text-gray-100 duration-700 hover:text-gray-400 hover:underline">
+            Contact@email.com
+          </a>
+        </div>
+
+      </div>
+
+      <hr class="my-10 border-gray-600 dark:border-gray-300">
+
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <p class="text-sm text-white">Copyright 2021 © S&S Consultant - Tourism & Architect Master Plan. All Rights Reserved.</p>
+          <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=contact@email.com" class="text-sm mx-2 text-gray-100 hover:text-gray-400" aria-label="Mail">
+            <i class="fi fi-sr-envelope"></i>&nbsp;Contact@email.com
+          </a>
+
+          <a target="_blank" href="https://api.whatsapp.com/send?phone=62000000000" class="text-sm mx-2 text-gray-100 hover:text-gray-400" aria-label="Phone">
+            <i class="fi fi-sr-phone-call"></i>&nbsp;0000-0000-0000
+          </a>
+          <div class="flex mt-3 -mx-2 sm:mt-0">
+              <a target="_blank" href="https://instagram.com//" class="mx-2 text-gray-100 hover:text-gray-400" aria-label="Instagram">
+                <i class="fi fi-brands-instagram"></i>
+              </a>
+
+              <a target="_blank" href="https://www.facebook.com/" class="mx-2 text-gray-100 hover:text-gray-400" aria-label="Facebook">
+                <i class="fi fi-brands-facebook"></i>
+              </a>
+
+              <a target="_blank" href="https://github.com/" class="mx-2 text-gray-100 hover:text-gray-400" aria-label="Github">
+                  <i class="fi fi-brands-github"></i>
+              </a>
+
+              <a target="_blank" href="https://twitter.com/" class="mx-2 text-gray-100 hover:text-gray-400" aria-label="Twitter">
+                <i class="fi fi-brands-twitter"></i>
+              </a>
+
+            <a target="_blank" href="https://www.linkedin.com/in/hastyana/" class="mx-2 text-gray-100 hover:text-gray-400" aria-label="Linkedin">
+              <i class="fi fi-brands-linkedin"></i>
+            </a>
+          </div>
+      </div>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
